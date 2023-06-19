@@ -1,13 +1,13 @@
-# Foobar
+# Padel Track
 
-Foobar is a Python library for dealing with word pluralization.
+A padel score tracking app
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the git to clone the repository.
 
 ```bash
-pip install foobar
+git clone https://github.com/coolbotic/padel.git
 ```
 
 ## Usage
