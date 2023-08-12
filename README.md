@@ -106,6 +106,13 @@ https://callstack.github.io/react-native-paper/docs/guides/getting-started/
 npx expo install react-native-ble-plx @config-plugins/react-native-ble-plx
 ```
 https://www.npmjs.com/package/@config-plugins/react-native-ble-plx
+```
+npx expo install react-native-reanimated-carousel
+*Supporting Packages*
+npx expo install react-native-gesture-handler
+npx expo install react-native-reanimated
+```
+https://github.com/dohooo/react-native-reanimated-carousel
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first

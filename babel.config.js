@@ -2,7 +2,10 @@ module.exports = function(api) {
   api.cache(true);
   return {
     presets: ['babel-preset-expo'],
-    plugins: [require.resolve("expo-router/babel")],
+    plugins: [
+      require.resolve("expo-router/babel"),
+      'react-native-reanimated/plugin',
+    ],
     env: {
       production: {
         //  Creates smaller bundle size by excluding modules you don't use, you can use our optional babel plugin.

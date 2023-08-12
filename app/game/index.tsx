@@ -62,9 +62,24 @@ export default function Home() {
   />
   
   <View style={styles.scoreContainer}>
-      <Text style={styles.scoreText}>{firstTeamScore}</Text>
+      
+      <View style={{flexGrow: 1, flexDirection: 'column', borderColor: 'black', borderWidth: 1, backgroundColor: 'blue'}}>
+        <IconButton size={40} style={{justifyContent: "center", alignSelf: 'center'}} icon={'menu-up'} onPress={() => {}} />
+        <Text style={styles.scoreText}>{firstTeamScore}</Text>
+        <IconButton size={40} style={{justifyContent: "center", alignSelf: 'center'}} icon={'menu-down'} onPress={() => {}} />
+      </View>
+      
+      <View style={{flex: 1, flexDirection: 'column', borderColor: 'black', borderWidth: 1}}>
       <Text style={styles.scoreText}>-</Text>
+      <IconButton size={40} style={{justifyContent: "center", alignSelf: 'center'}} icon={'shuffle-variant'} onPress={() => {}} />
+      </View>
+      
+      <View style={{flexGrow: 1}}>
+      <IconButton size={40} style={{justifyContent: "center", alignSelf: 'center'}} icon={'menu-up'} onPress={() => {}} />
       <Text style={styles.scoreText}>{secondTeamScore}</Text>
+      <IconButton size={40} style={{justifyContent: "center", alignSelf: 'center'}} icon={'menu-down'} onPress={() => {}} />
+      </View>
+
   </View>
   
   </SafeAreaView>
@@ -106,12 +121,14 @@ const styles = StyleSheet.create({
   },
   scoreText: {
     fontWeight: '300', 
-    fontSize: 128
+    fontSize: 128,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   scoreContainer: {
     flex: 1, 
     flexDirection: 'row', 
-    justifyContent: 'space-evenly', 
+    // justifyContent: 'space-evenly', 
     alignItems: 'center'
   }
 });
